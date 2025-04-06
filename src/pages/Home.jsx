@@ -103,7 +103,7 @@ export default function Home() {
               <p>{mat.course} | {mat.subject}</p>
               <p className="text-sm text-gray-600">{mat.type} ({mat.year})</p>
               <a
-                href={`http://localhost:5000/${mat.fileUrl}`}
+                href={`${import.meta.env.VITE_API_URL}/${mat.fileUrl}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-2 text-blue-600 underline"
