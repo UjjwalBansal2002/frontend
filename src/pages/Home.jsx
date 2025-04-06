@@ -13,7 +13,7 @@ export default function Home() {
   });
 
   useEffect(() => {
-    axios.get(`${import.meta.env.VITE_API_URL}/api/materials`)
+    axios.get(`${import.meta.env.VITE_API_URL}/api/materials/`)
       .then(res => {
         setMaterials(res.data);
         setFiltered(res.data);
