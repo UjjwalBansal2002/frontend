@@ -32,7 +32,7 @@ export default function UploadMaterial() {
     formData.append("file", file);
 
     try {
-      await axios.post("http://localhost:5000/api/materials/upload", formData, {
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/materials`, formData, {
         headers: {
           Authorization: token,
           "Content-Type": "multipart/form-data",
