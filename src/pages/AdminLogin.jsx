@@ -13,7 +13,7 @@ export default function AdminLogin() {
     setErrorMsg("");
 
     try {
-      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/materials`, {
+      const res = await axios.post(`${import.meta.env.VITE_API_URL}/api/login`, {
         email,
         password,
       });
