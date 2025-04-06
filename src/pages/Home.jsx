@@ -98,6 +98,7 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {filtered.length > 0 ? (
           filtered.map(mat => (
+            
             <div key={mat._id} className="p-4 rounded-xl shadow bg-white">
               <h3 className="font-semibold text-lg">{mat.title}</h3>
               <p>{mat.course} | {mat.subject}</p>
